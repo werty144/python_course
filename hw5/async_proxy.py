@@ -31,8 +31,7 @@ class MainHandler(RequestHandler):
                 continue
             self.add_header(header, body)
 
-    @staticmethod
-    async def get_response(request_suffix):
+    async def get_response(self, request_suffix):
         """
         Get target server response.
 
